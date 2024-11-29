@@ -1,0 +1,24 @@
+{
+    "usuarios": [
+      {
+        "name": "João Silva",
+        "email": "joao.silva@email.com",
+        "password": "Senha1234"
+      },
+      {
+        "name": "Maria Oliveira",
+        "email": "maria.oliveira@email.com",
+        "password": "Senha9876"
+      },
+      {
+        "name": "Carlos Souza",
+        "email": "carlos.souza@email.com",
+        "password": "Exemplo2024"
+      },
+      {
+        "name": "Ana Costa",
+        "email": "ana.costa@email.com",
+        "password": "Palavra1234"
+      }
+    ]
+  }

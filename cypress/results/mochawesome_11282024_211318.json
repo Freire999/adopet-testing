@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-29T00:13:13.847Z",
+    "end": "2024-11-29T00:13:18.453Z",
+    "duration": 4606,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "37285924-7827-4280-8751-4e439bfac213",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginIncorreto.cy.js",
+      "file": "cypress\\e2e\\loginIncorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f785f8ac-a92d-4167-87e3-7a8b67e93415",
+          "title": "Acesso a página de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Vericica mensagem de falha no login",
+              "fullTitle": "Acesso a página de login Vericica mensagem de falha no login",
+              "timedOut": null,
+              "duration": 1557,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"submit-button\"]').click();\ncy.contains('É necessário informar um endereço de email').should('be.visible');\ncy.contains('Insira sua senha').should('be.visible');",
+              "err": {},
+              "uuid": "2d5e45c2-e87e-42df-93a6-9bea067c8be7",
+              "parentUUID": "f785f8ac-a92d-4167-87e3-7a8b67e93415",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve falhar mesmo com os campos preenchidos corretamente",
+              "fullTitle": "Acesso a página de login Deve falhar mesmo com os campos preenchidos corretamente",
+              "timedOut": null,
+              "duration": 1128,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('mateus@gmail.com', 'Senha123');\ncy.wait('@stubPost');\ncy.contains('Falha no login. Consulte suas credenciais').should('be.visible');",
+              "err": {},
+              "uuid": "3bc16613-bea9-4dde-93a6-82051f8aa813",
+              "parentUUID": "f785f8ac-a92d-4167-87e3-7a8b67e93415",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2d5e45c2-e87e-42df-93a6-9bea067c8be7",
+            "3bc16613-bea9-4dde-93a6-82051f8aa813"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2685,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
