@@ -13,27 +13,20 @@ Certifique-se de ter o Node.js instalado na sua máquina. Você pode baixar a ú
 
 Faça o download do projeto e acesse a pasta do projeto no seu terminal.
 
-bash
-Copiar código
 git clone https://github.com/seu-usuario/adopet-testing.git
 cd adopet-testing
+
 Instale as dependências do projeto:
-
-bash
-Copiar código
 npm install
-Baixe o pacote do Cypress:
 
-bash
-Copiar código
+Baixe o pacote do Cypress:
 npx cypress open
+
 Isso abrirá a interface gráfica do Cypress, onde você poderá executar os testes.
 
 Como Rodar os Testes
 Após ter instalado o Cypress, para rodar os testes, execute o comando abaixo:
 
-bash
-Copiar código
 npx cypress run
 Isso fará com que os testes sejam executados em modo headless (sem interface gráfica).
 
